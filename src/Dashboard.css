@@ -1,0 +1,90 @@
+body {
+  margin: 0; /* 👈 Remove default browser margin */
+  padding: 0;
+  background: #1e1e2f; /* match background */
+  overflow-x: hidden;
+}
+
+.dashboard {
+  padding: 20px;
+  font-family: "Poppins", Arial, sans-serif;
+  background: #1e1e2f;
+  min-height: 100vh;
+  color: white;
+  display: flex;
+  flex-direction: column;
+  width: 100vw;  /* 👈 Force full viewport width */
+}
+
+.dashboard-card {
+  background: #2a2a40;
+  padding: 20px;
+  border-radius: 15px;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.3);
+  width: 100%;  /* 👈 Full width */
+  box-sizing: border-box; /* prevent overflow */
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: space-between; /* 👈 Distribute items evenly */
+  align-items: flex-start;
+  width: 100%; /* 👈 Full width of parent */
+}
+
+.dashboard h2 {
+  margin-bottom: 20px;
+  font-weight: 600;
+  text-align: center;
+}
+
+.control-panel {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.control-panel button {
+  padding: 10px 15px;
+  border: none;
+  border-radius: 8px;
+  background: #4CAF50;
+  color: white;
+  cursor: pointer;
+  font-weight: 500;
+  transition: background 0.2s ease;
+}
+
+.control-panel button:hover {
+  background: #45a049;
+}
+
+.dashboard-container {
+  display: flex;
+  justify-content: space-around;
+  gap: 30px;
+}
+
+.dashboard-table {
+  border-collapse: collapse;
+  background: #3a3a55;
+  border-radius: 10px;
+  overflow: hidden;
+}
+
+.dashboard-table th {
+  background: #4CAF50;
+  padding: 10px;
+  text-align: left;
+  color: white;
+}
+
+.dashboard-table td {
+  padding: 10px;
+  border-bottom: 1px solid #555;
+}
+
+.dashboard-table tr:nth-child(even) {
+  background: #2e2e44;
+}
